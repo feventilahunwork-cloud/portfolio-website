@@ -1,53 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feven | Portfolio</title>
+    <meta name="description" content="Feven Tilahun — Software Engineering student and aspiring full stack developer.">
+    <title>Feven Tilahun | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://googleapis.com" rel="stylesheet">
-
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-   <header>
 
-    <nav>
-
-        <h2>Feven</h2>
-
-        <ul>
-
-            <li><a href="#">Home</a></li>
-
-            <li><a href="#">About</a></li>
-
-            <li><a href="#">Skills</a></li>
-
-            <li><a href="#">Projects</a></li>
-
-            <li><a href="#">Contact</a></li>
-
-        </ul>
-
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Feven<span>.</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="hero">
+    <main>
 
-        <h1>Hi, I'm Feven 👋</h1>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1>Feven Tilahun</h1>
+                <p class="hero-tagline">Software Engineering Student &amp; Aspiring Full Stack Developer</p>
+                <p class="hero-description">
+                    I build clean, thoughtful web experiences and love turning ideas into working software.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-circle">
+                    <span class="hero-initials">FT</span>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            Software Engineering Student | Future Full Stack Developer
-        </p>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I'm a software engineering student with a passion for building things on the web.
+                            I enjoy working across the stack — from crafting responsive interfaces to writing
+                            backend logic that powers them.
+                        </p>
+                        <p>
+                            When I'm not coding, I'm learning new technologies, contributing to projects,
+                            and sharpening my problem-solving skills. I'm always looking for opportunities
+                            to grow and collaborate.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Curiosity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <h3>Quick Facts</h3>
+                        <ul class="facts-list">
+                            <li><strong>Focus:</strong> Full Stack Development</li>
+                            <li><strong>Education:</strong> Software Engineering</li>
+                            <li><strong>Interests:</strong> Web Dev, UI/UX, Open Source</li>
+                            <li><strong>Status:</strong> Open to opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <button>View My Projects</button>
+        <!-- Skills -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5 &amp; CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>REST APIs</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛠️</div>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git &amp; GitHub</li>
+                            <li>VS Code</li>
+                            <li>Figma</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <p class="section-subtitle">A selection of things I've built</p>
+                <div class="projects-grid">
 
-</header>
-    </header>
-    
+                    <article class="project-card">
+                        <div class="project-image project-image-1">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" aria-label="View Portfolio Website">Live Demo ↗</a>
+                                <a href="https://github.com" class="project-link" aria-label="View Portfolio source code">Source Code ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A responsive personal portfolio built with HTML, CSS, and JavaScript to showcase my work and skills.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-2">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="https://github.com" class="project-link">Source Code ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager App</h3>
+                            <p>A full-stack task management application with user authentication, CRUD operations, and a clean UI.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-3">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">Live Demo ↗</a>
+                                <a href="https://github.com" class="project-link">Source Code ↗</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather Dashboard</h3>
+                            <p>A weather app that fetches real-time data from a public API and displays forecasts with an intuitive interface.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        
+        <!--Services-->
+          <section id="services" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Services I <span>Provide</span></h2>
+                <p class="section-subtitle">Services Like</p>
+                <div class="services-grid">
+                    <div class="services-card">
+                        <div class="services-icon">🌐</div>
+                        <h3>Web Development</h3>
+                        <h6>Custom websites and landing pages that look great on every device and load fast.</h6>
+                        <ul>
+                            <li>Responsive design</li>
+                            <li>Clean UI</li>
+                            <li>Contact forms </li>
+                            <li>Basic SEO setup</li>
+                        </ul>
+                             <div class="learn more-buttons">
+                    <a href="#home" class="btn btn-primary">Learn More</a>
+                </div>
+                    </div>
+                    <div class="services-card">
+                        <div class="services-icon">⚙️</div>
+                        <h3> Frontend Development</h3>
+                        <h6>Turning designs and ideas into polished, interactive interfaces users actually enjoy.</h6>
+                        <ul>
+                            <li>HTML/CSS/JS</li>
+                            <li>React components</li>
+                            <li>Mobile-first layout</li>
+                            <li>Smooth animations</li>
+                        </ul>
+                         <div class="learn more-buttons">
+                    <a href="#home" class="btn btn-primary">Learn More</a>
+                </div>
+                    </div>
+                    <div class="services-card">
+                        <div class="services-icon">🛠️</div>
+                        <h3>Full Stack Applications</h3>
+                        <h6>End-to-end web apps with a frontend, backend, and database — built to solve real problems.</h6>
+                        <ul>
+                            <li>User auth</li>
+                            <li> CRUD features</li>
+                            <li>REST APIs</li>
+                            <li>Database setup</li>
+                        </ul>
+                             <div class="learn more-buttons">
+                    <a href="#home" class="btn btn-primary">Learn More</a>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:feventilahun.work@email.com">feventilahun.work@email.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/feven-tilahun-32416b388</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🐙</span>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/feventilahunwork-cloud</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Feven Tilahun Mulugeta" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Feventilahun.work@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Feven Tilahun. Built with passion and code.</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:feven.tilahun@email.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
